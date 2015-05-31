@@ -41,6 +41,8 @@ ChilitagsDetector::ChilitagsDetector(ros::NodeHandle& rosNode,
     if(tagSize!=USE_CHILITAGS_DEFAULT_PARAM)
         chilitags3d.setDefaultTagSize(tagSize); // use specified value
 
+     chilitags3d.setPersistence(1.0);  // override persistence (HAL)
+
 }
 
 
